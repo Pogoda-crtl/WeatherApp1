@@ -21,6 +21,57 @@
             <button id="geo-btn" class="btn" aria-label="Użyj mojej lokalizacji">Moja Lokalizacja 📍</button>
         </nav>
     </header>
+<!--sprawdzanie miasta-->
+    <main class="container">
+        <section id="search-section" class="card">
+            <h2>Sprawdź pogodę</h2>
+            <form id="weather-form" novalidate>
+                <div class="form-group">
+                    <label for="city-input">Nazwa miasta:</label>
+                    <input type="text" id="city-input" placeholder="np. Warszawa" required>
+					<!--wyświetlenie błędu przy złej nazwie miasta-->
+                    <span class="error-msg" id="city-error"></span>
+                </div>
+                <!--wybieranie jednostek-->
+                <div class="form-group">
+                    <label for="unit-select">Jednostki:</label>
+                    <select id="unit-select">
+                        <option value="metric">Celsjusz (°C)</option>
+                        <option value="imperial">Fahrenheit (°F)</option>
+                    </select>
+                </div>
+                <!--zapisanie historii-->
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="save-history" checked>
+                    <label for="save-history">Zapisz wyszukiwanie w historii</label>
+                </div>
+<!--przycisk wyszukiwania-->
+                <button type="submit" class="btn btn-primary">Szukaj</button>
+            </form>
+            <!--historia-->
+            <div id="history-container" class="history-tags">
+                </div>
+        </section>
+<!--wyświetlenie miasta-->
+        <section id="current-weather" class="card hidden">
+            <article class="weather-display">
+                <h2 id="city-name">Miasto</h2>
+                <img id="weather-icon" src="" alt="Ikona pogody" class="main-icon">
+                <p id="temperature" class="temp-large">--°C</p>
+                <p id="description" class="weather-desc">Opis</p>
+                <div class="weather-details">
+                    <p>Wiatr: <span id="wind-speed">--</span></p>
+                    <p>Wilgotność: <span id="humidity">--</span>%</p>
+                </div>
+            </article>
+        </section>
+<!--wyświetlenie pogody na 5 dni-->
+        <section id="forecast-section" class="card hidden">
+            <h2>Prognoza na 5 dni</h2>
+            <div id="forecast-grid" class="forecast-grid">
+                </div>
+        </section>
+    </main>
 <!--stopka-->
     <footer>
         <div class="container">
