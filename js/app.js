@@ -42,3 +42,42 @@ document.addEventListener('DOMContentLoaded', () => {
             renderHistory();
         }
     });
+
+    geoBtn.addEventListener('click', () => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(async (position) => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+                const units = unitSelect.value;
+                
+                try {
+                    const data = await WeatherAPI.getWeatherByCoords(lat, lon, units);
+                    
+                    await fetchAndDisplayWeather(data.name, units);
+                } catch (error) {
+                    alert('Nie udało się pobrać pogody dla Twojej lokalizacji.');
+                }
+            }, () => {
+                alert('Odmowa dostępu do lokalizacji.');
+            });
+        } else {
+            alert('Twoja przeglądarka nie wspiera geolokalizacji.');
+        }
+    });
+
+    
+    unitSelect.addEventListener('change', () => {
+        const currentCity = document.getElementById('city-name').textContent;
+        if (currentCity !== 'Miasto' && !currentSection.classList.contains('hidden')) {
+            fetchAndDisplayWeather(currentCity, unitSelect.value);
+        }
+    });
+
+    
+    historyContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('history-btn')) {
+            const city = e.target.textContent;
+            cityInput.value = city;
+            fetchAndDisplayWeather(city, unitSelect.value);
+        }
+    });
