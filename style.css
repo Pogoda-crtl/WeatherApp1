@@ -25,3 +25,19 @@ body {
     background-color: #e5e7eb;
 }
 
+.bg-default { 
+    background: url('images/default.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+}
+.bg-sunny { 
+    background: url('images/sunny.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+}
+.bg-rainy { 
+    background: url('images/rainy.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    color: white; 
+}
+.bg-rainy .card { color: var(--text-color); } 
+
+
