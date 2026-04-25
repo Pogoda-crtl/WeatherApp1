@@ -1,1 +1,27 @@
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --text-color: #1f2937;
+    --bg-light: rgba(255, 255, 255, 0.9);
+    --error-color: #dc2626;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --border-radius: 12px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    transition: background-image 0.5s ease-in-out, background-color 0.5s ease;
+    background-color: #e5e7eb;
+}
 
