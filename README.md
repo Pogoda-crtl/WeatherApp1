@@ -3,9 +3,9 @@
 Responsywna aplikacja webowa do sprawdzania aktualnej pogody oraz prognozy na 5 dni dla wybranego miasta. Projekt zespołowy stworzony w ramach zaliczenia przedmiotu "Wprowadzenie do Technologii Internetowych".
 
 ##  Autorzy
-- **Katarzyna Kaczmarczyk ** (Team Leader) - GitHub: [@Pogoda-crtl](https://github.com/Pogoda-crtl)
+- **Katarzyna Kaczmarczyk** (Team Leader) - GitHub: [@Pogoda-crtl](https://github.com/Pogoda-crtl)
 - **Oliwia Markiewicz** (Frontend Developer 1) - GitHub: [@olimarkiew-star](https://github.com/olimarkiew-star)
-- **Gabriela Ciurkowska ** (Frontend Developer 2) - GitHub: [@gciurko](https://github.com/gciurko)
+- **Gabriela Ciurkowska** (Frontend Developer 2) - GitHub: [@gciurko](https://github.com/gciurko)
 - **Jakub Owczuk** (JavaScript Developer) - GitHub: [@kuba730](https://github.com/kuba730)
 - **Hubert Seliwiak** (Full-Stack Developer) - GitHub: [@hubertsel12234-hash](https://github.com/hubertsel12234-hash)
 
@@ -33,3 +33,4 @@ Responsywna aplikacja webowa do sprawdzania aktualnej pogody oraz prognozy na 5 
 
 ## Screenshots
 ![Screenshot 1](https://prnt.sc/h9gusH-ihTp5)
+(Link skopiować i wkleić manualnie)
